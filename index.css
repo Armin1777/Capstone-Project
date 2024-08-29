@@ -12,20 +12,13 @@ body{
     justify-content:center;
     align-items: center;
     min-height: 100vh;
-    background: url('Mountain.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
 
 .nash{
     width: 420px;
     align-items: center;
-    background-color:rgb(172, 238, 238);
     padding: 30px 60px;
-    border-radius: 10px;
-
-   
+    border-radius: 10px;  
 }
 
 .nash h1{
@@ -105,3 +98,6 @@ body{
 .remember-forgot a:hover{
     text-decoration: underline;
 }
+
+
+
