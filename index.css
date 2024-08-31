@@ -3,10 +3,11 @@
     padding: 0;
     box-sizing:border-box;
     font-family: "Poppins", sans-serif;
-    margin-right: 20px;
 
 }
-
+h2{
+    margin-right: 40px;
+}
 body{
     display: flex;
     justify-content:center;
@@ -98,6 +99,46 @@ body{
 .remember-forgot a:hover{
     text-decoration: underline;
 }
-
+nav{
+    background: yellowgreen;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav  ul{
+    list-style:none;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+    color: black;
+}
+nav a:hover{
+    background:rgb(45, 169, 118);;
+}
+h1.xb{
+    color: black;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 100px;
+    padding-right: 300px;
+    font-size: 60px;
+    }
+    p{
+        text-align: center;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    
 
 
