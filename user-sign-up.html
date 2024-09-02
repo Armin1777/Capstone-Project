@@ -14,11 +14,22 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            margin-top: auto;
+            background-image: url(city-map-any-kind-digital-info-graphics-print-publication-gps-map_403715-37.avif);
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position: center;
         }
         .calvin{
             width: 750px;
             border-radius: 10px;
             color:black;
+            background: transparent;
+            border: 2px solid rgba(255,255,255, .2);
+            backdrop-filter: blur(20px);
+            align-self:center;
+            box-shadow: 0 0 10px rgba(0,0,0, 0.2);
+            margin-top: 50px;
         }
         .calvin h1{
             font-size: 36px;
@@ -50,7 +61,7 @@
             background: transparent;
             font-size: 16px;
             color: black;
-            border-radius: 6px;
+            border-radius: 10px;
             border: 2px solid black;
             padding: 10px 10px;
         }
@@ -60,18 +71,62 @@
             margin-right: 50;
             font-size: 16px;
             cursor: pointer;
-            background:rgb(45, 169, 118);
+            background:yellowgreen;
             border-radius: 20px;
+            color:white;
             outline: none;
             border: none;
+            font-weight:400;
+        }
+        nav{
+            background: yellowgreen;
+            box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        nav  ul{
+             list-style:none;
+            display: flex;
+            justify-content: flex-end;
+            align-items:center;
+            margin-right: 100px;
+        }
+        nav li{
+            height: 50px;
+        }
+        nav a{
+            height: 100%;
+            padding: 0 30px;
+            text-decoration: none;
+            display:flex;
+            align-items: center;
+            color: black;
+        }
+        nav a:hover{
+            background:rgb(45, 169, 118);;
+        }
+        @media (max-width: 576px) {
+            .input-box .input-field{
+                width: 100%;
+                margin: 0;
+            }    
         }
       </style>  
     </head>
     <body>
+        <nav>
+            <ul>
+            <li><a href="#">Administrators</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ's</a></li>
+            </ul>
+        </nav>
         <div class="calvin">
             <form action="">
-                <h1>Welcome to the System</h1>
-                <h2>Please Register Here!</h2>
+            </br>
+        </br>
+                <h2>Welcome to the System, Please Register Here!</h2>
             </br>
         </br>
             <div class="input-box">
@@ -101,7 +156,7 @@
                 </div>
             </br>
         </br>
-                <label><input type="checkbox">I hereby declare that the above information provided is correct.</label>
+                <label><input type="checkbox">I hereby declare that the information provided above is correct.</label>
             </br>
         </br>
                 <button type="submit" class="btn">Register</button>
