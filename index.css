@@ -1,9 +1,10 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing:border-box;
     font-family: "Poppins", sans-serif;
-
+    scroll-behavior: smooth;
 }
 h2{
     margin-right: 40px;
@@ -72,7 +73,7 @@ body{
     border-radius: 40px;
     cursor: pointer;
     font-size: 16px;
-    color: white;
+    color: black;
     font-weight: 600;
 }
 
@@ -85,8 +86,12 @@ body{
     border-radius: 40px;
     cursor: pointer;
     font-size: 16px;
-    color: white;
+    color: black;
     font-weight: 600;
+}
+.nash .btn:hover,
+.nash .btn2:hover{
+    color: white;
 }
 
 .nash .remember-forgot{
@@ -134,9 +139,13 @@ nav a{
     display:flex;
     align-items: center;
     color: black;
+    font-weight: 500;
+    transition: .3s;
 }
-nav a:hover{
-    background:rgb(45, 169, 118);;
+nav a:hover,
+nav a.active{
+    color: white;
+
 }
 h1.xb{
     color: black;
@@ -157,5 +166,6 @@ h1.xb{
             width: 100%;
         }
     }
+
 
 
