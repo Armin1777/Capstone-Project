@@ -3,7 +3,7 @@
         <title>Dashboard</title>
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-        
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <style>
            *{
             margin: 0;
@@ -13,11 +13,11 @@
             min-height: 100vh;
             box-sizing:border-box;
             font-family: "Poppins", sans-serif;
-            color: rgb(206, 206, 206);
+            background-color: rgb(206, 206, 206);
            }
            nav{
-            background-color: yellowgreen;
-            box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+            background-color: none;
+           
            }
            nav ul{
             width: 100%;
@@ -43,11 +43,14 @@
             color: white;
            }
            main{
-            margin-top: 50px;
-            padding: 0;
-            margin-left: 300;
-            color: black;
-            
+            margin-top: 20px;
+            margin-left: 280px;
+            margin-right: 50px;
+            border-color: black;  
+            box-shadow: 0 0 10px rgba(0,0,0, 0.2);
+            padding: 20px 20px;
+            border-radius: 10px;  
+            border: 2px solid rgba(255,255,255, .2);      
            }
            .Sidebar li:first-child{
             font-size: 30px;
@@ -77,17 +80,32 @@
     </head>
     <body>
             <nav>
-                <ul class="Sidebar">
+                <div class="Sidebar">
                     <li><a href="">BGHIS</a></li>
                 </br>
             </br>
-        </br>
-                    <li><a href="">Profile</a></li>
-                    <li><a href="">Barangays</a></li>
-                    <li><a href="">Requests</a></li>
-                    <li><a href="">Follow-up</a></li>
-                    <li><a href="">Settings</a></li>
-                </ul>
+                    <li><a href="">
+                        <i class="fas fa-Profile"></i>
+                        <span class="nav-items">Profile</span>
+                    </a></li>
+                    <li><a href="">
+                        <i class="fas fa-Maps"></i>
+                        <span class="nav-items">Maps</span>
+                    </a></li>  
+                    <li><a href="">
+                        <i class="fas fa-Requests"></i>
+                        <span class="nav-items">Requests</span>
+                    </a></li>  
+                    <li><a href="">
+                        <i class="fas fa-Follow_up"></i>
+                        <span class="nav-items">Follow up</span>
+                    </a></li>  
+                    <li><a href="">
+                        <i class="fas fa-Settings"></i>
+                        <span class="nav-items">Settings</span>
+                    </a></li>  
+                </div>
+                    <i class="user" id="btn"></i>
                 <ul>
                     <li><a href="">Administrators</a></li>
                     <li><a href="">About</a></li>
