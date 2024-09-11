@@ -2,32 +2,102 @@
     <head>
         <title>Dashboard</title>
     </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        body{
+            background: white;
+            color: white;
+        }
+        .container{
+            display:flex;
+
+        }
+        nav{
+            position: relative;
+            top: 0;
+            bottom:0;
+            height: 100vh;
+            left:0;
+            background: yellowgreen;
+            width:250px;
+            overflow:hidden;
+            box-shadow:0 20px 35px rgba(0,0,0, 0.1);
+        }
+        .logo span{
+            font-weight: bold;
+            padding-left: 15px;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: black;
+            
+        }
+        a{
+            position: relative;
+            font-size: 18px;
+            display: table;
+            width: 250px;
+            padding:10px;
+            color: black;
+            transition: .3s;
+        }
+        nav .fas{
+            position:relative;
+            width:70px;
+            height:40px;
+            top:14px;
+            font-size:20px;
+            text-align:center;
+        }
+        .nav-item{
+            position:relative;
+            top:12px;
+            margin-left:10px;
+        }
+        a:hover{
+            color:white;
+        }
+    </style>
     <body>
-        <nav>
+        <div class="container">
+           <nav>
             <ul>
-                <li>
-                    <a href="icons/user.png">
-                        <i class="fas fa-Profile" alt="">
-                        <span class="nav-item">Profile</span>
-                    </a>
-                </li>
+                <li><h1 class="logo">
+                    <img src="" alt="">
+                    <span class="nav-item">Dashboard</span>
+                </h1></li>
+            </br>
+        </br>
+    </br>
                 <li><a href="#">
-                    <i clss="fas fa-Maps" alt="">
+                    <i class="fas fa-Profile"></i>
+                    <span class="nav-item">Profile</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="fas fa-Maps"></i>
                     <span class="nav-item">Maps</span>
                 </a></li>
                 <li><a href="#">
-                    <i class="fas fa-Requests" alt="">
+                    <i class="fas fa-Requests"></i>
                     <span class="nav-item">Requests</span>
                 </a></li>
                 <li><a href="#">
-                    <i class="fas fa-Follow-ups" alt="">
-                    <span class="nav-item">Follow-ups</span>
+                    <i class="fas fa-Follow-up"></i>
+                    <span class="nav-item">Follow-up</span>
                 </a></li>
                 <li><a href="#">
-                    <i class="fas fa-Settings" alt="">
+                    <i class="fas fa-Settings"></i>
                     <span class="nav-item">Settings</span>
                 </a></li>
             </ul>
-        </nav>
+           </nav>
+        </div>
     </body>
 </html>

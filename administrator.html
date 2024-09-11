@@ -226,3 +226,99 @@ L.control.layers(baseMaps).addTo(map);
     <li><a href="">FAQ'S</a></li>
     <i class=""></i>
 </ul>
+
+
+
+
+
+
+<nav>
+    <div class="Sidebar">
+        <l1><h2>BGHIS</h2></l1>
+        <li><h1 href="" class="logo">dashboard</h1></li>
+        </br>
+    </br>
+        <li><a href="dashboard.html">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <span class="nav-items">Home</span>
+        </a></li>
+        <li><a href="profile.html">
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+            <span class="nav-items">Profile</span>
+        </a></li>
+        <li><a href="maps.html">
+            <i class="fa fa-map" aria-hidden="true"></i>
+            <span class="nav-items">Maps</span>
+        </a></li>  
+        <li><a href="requests.html">
+            <i class="fa fa-file" aria-hidden="true"></i>
+            <span class="nav-items">Requests</span>
+        </a></li>  
+        <li><a href="Follow_up.html">
+            <i class="fa fa-list" aria-hidden="true"></i>
+            <span class="nav-items">Follow up</span>
+        </a></li>  
+        <li><a href="Settings.html">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            <span class="nav-items">Settings</span>
+        </a></li>
+    </div>
+</nav>
+
+
+nav{
+    background: rgb(185, 240, 67);
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    margin-top: 0;
+    width: 100%;
+   
+   }
+   .logo{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top:30px;
+    margin-left:10px;
+    color: rgb(78, 2, 78);
+    
+   }
+   nav li{
+    height: 50px;
+    }
+   nav a{
+    position:relative;
+    font-size:15px;
+    display:table;
+    text-decoration: none;
+    flex-direction: column;
+    color: rgb(78, 2, 78);
+    transition: .3s;
+    padding: 10px;
+   }
+   nav .fa{
+    position:relative;
+    width: 70px;
+    height:40px;
+    top:0;
+    font-size:20px;
+    text-align:center;
+   }
+   nav a:hover{
+    color: white;
+   }
+   .Sidebar{
+    background-color: rgb(185, 240, 67);
+    list-style: none;
+    position: fixed;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 10px;
+   }

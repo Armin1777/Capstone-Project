@@ -1,10 +1,209 @@
 <html>
-    <head>
-        <title>
-
-        </title>
-    </head>
+<head>
+    <title>
+        Profile
+    </title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            min-height: 150vh;
+            box-sizing:border-box;
+            font-family: "Poppins", sans-serif;
+            background-color: rgb(239, 255, 252);
+            background-image: url('city-map-any-kind-digital-info-graphics-print-publication-gps-map_403715-37.avif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        body::-webkit-scrollbar{
+            display:none;
+            scroll-behavior: smooth;
+        }
+        nav{
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        nav a:hover{
+            color: white;
+        }
+        .thirdy{
+            margin-left:300px;
+            margin-top: 100px;
+            border: 0 20px;
+            background-color: rgb(78, 2, 78);
+            padding: 50px;
+            margin-right: 200px;
+            border-radius: 20px;
+            position:right;
+        }
+        .input-box input{
+            border-top:none;
+            border-left:none;
+            border-right:none;
+            outline: none;
+            width: 80%;
+            height: 50px;
+            border-width: 1px;
+            background: transparent;
+            border-color: rgb(185, 240, 67);
+            font-size: 16px;
+            padding: 7px;
+            position: center;    
+            color:white;
+            cursor: pointer;
+        }
+        .input-box input::placeholder{
+            font-weight:200px;
+            color: rgb(185, 240, 67);
+        }
+        h6{
+            font-size: 16px;
+            margin-top:20px;
+            color:rgb(185, 240, 67);
+            font-family: "Poppins", sans-serif;
+            font-weight:200;
+            margin-left: 5px;
+        }
+        .Sidebar{
+            background-color: rgb(185, 240, 67);
+            list-style: none;
+            position: fixed;
+            height: 100vh;
+            width: 250px;
+            z-index: 999;
+            box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+            display:flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            border-radius: 10px;
+           }
+           nav li{
+            height: 50px;
+           }
+           nav a{
+            position:relative;
+            font-size:15px;
+            display:table;
+            text-decoration: none;
+            flex-direction: column;
+            color: rgb(78, 2, 78);
+            transition: .3s;
+            padding: 10px;
+           }
+           .logo{
+            font-weight: bold;
+            padding-left: 15px;
+            font-size: 20px;
+            text-transform: uppercase;
+            margin-top:30px;
+            margin-left:10px;
+            color: rgb(78, 2, 78);
+           }
+           nav .fa{
+            position:relative;
+            width: 70px;
+            height:40px;
+            top:0;
+            font-size:20px;
+            text-align:center;
+           }
+           .aaron{
+            float:right;
+            margin-top: 20px;
+            margin-right: 40px;
+            font-size:40px;
+            color: rgb(78, 2, 78);
+           }
+           .savebtn{
+            margin-top: 20px;
+            width: 80px;
+            height: 40px;
+            background: rgb(185, 240, 67);
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            color: black;
+            font-weight: 200;
+            transition: .3s;
+           }
+           .savebtn:hover{
+            color:white;
+           }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+        <nav class="">
+            <h1 class="aaron">BGHIS</h1>
+        </nav>
+        <nav>
+            <div class="sidebar">
+                <li><h1 href="" class="logo">dashboard</h1></li>
+                </br>
+            </br>
+                    <li><a href="dashboard.html">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <span class="nav-items">Home</span>
+                    </a></li>
+                    <li><a href="profile.html">
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                        <span class="nav-items">Profile</span>
+                    </a></li>
+                    <li><a href="maps.html">
+                        <i class="fa fa-map" aria-hidden="true"></i>
+                        <span class="nav-items">Maps</span>
+                    </a></li>  
+                    <li><a href="requests.html">
+                        <i class="fa fa-file" aria-hidden="true"></i>
+                        <span class="nav-items">Requests</span>
+                    </a></li>  
+                    <li><a href="Follow_up.html">
+                        <i class="fa fa-list" aria-hidden="true"></i>
+                        <span class="nav-items">Follow up</span>
+                    </a></li>  
+                    <li><a href="Settings.html">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                        <span class="nav-items">Settings</span>
+                    </a></li>
+            </div>
+    </nav>
     <body>
-        
+        <div class="thirdy">
+            <form action="">
+                <div class="input-box">
+                    <input type="text" placeholder="First Name">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Middle Name">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Last Name">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Age">
+                </div>
+                <div class="input-box">
+                    <h6>Birthdate</h6>
+                    <input type="text" name="date" onfocus="(this.type='date')" oblur="(!this.value)" this.type="'text'" clss="dater">
+                </div>
+                <div class="input-box">
+                    <input type="search" placeholder="High school">
+                </div>
+                <div class="input-box">
+                    <input type="search" placeholder="College">
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Update email">
+                </div>
+                <button type="submit" class="savebtn">Save</button>
+            </form>
+        </div>
+        <p>hello world</p>
     </body>
 </html>
