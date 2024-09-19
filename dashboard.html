@@ -18,8 +18,7 @@
             scroll-behavior: smooth;
            }
            nav{
-            background-color: none;
-           
+            background-color: none; 
            }
            .logo{
             font-weight: bold;
@@ -71,6 +70,54 @@
            .header h2{
             color: rgb(78, 2, 78);
            }
+           .main{
+            position:relative;
+            padding:20px;
+            width:50%;
+            margin-left: 260px;
+            list-style: none;
+            display:flex;
+            justify-content: space-between;
+           }
+           .main-skills{
+            display:flex;
+            margin-top:20px;
+            margin-right: 30px;
+           }
+           .main-skills .card{
+            width:150%;
+            height:150%;
+            background:#fff;
+            text-align:center;
+            border-radius:20px;
+            padding:10px;
+            box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+           }
+           .main-skills .card2{
+            width:150%;
+            height:150%;
+            background: rosybrown;
+            text-align:center;
+            border-radius:20px;
+            padding:10px;
+            box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+           }
+           .main-skills .card3{
+            width:150%;
+            height:150%;
+            background: blue;
+            text-align:center;
+            border-radius:20px;
+            padding:10px;
+            box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+           }
+           .main-skills .card h3{
+            margin:10px;
+            text-transform: capitalize;
+           }
+           .main-skill .card i{
+            size: 30px;
+           }
            p{
             font-size: 18px;
            }
@@ -102,7 +149,7 @@
            }
         </style>
     </head>
-            <nav class="">
+            <nav class="caleb">
                 <h1 class="aaron">BGHIS</h1>
             </nav>
     <body>
@@ -138,18 +185,33 @@
                 </div>
             </nav>
         </br>
+       
             <section class="header">
                 <h2 class="message">Hello User!</h2>
                 <p>This is the official BGHIS website where you can use our map to analyze and apply for clearances.</p>
             </section>
             <section class="main">
-                <div class="main-top">
-                    <h4>Population</h4>    
+                <div class="main-skills">
+                    <div class="card">
+                        <i class="fa fa-laptop-code"></i>
+                        <h3>Population</h3>
+                        <p>Bulan has approximately 8 Billion inhabitants.</p>
+                    </div>
+                </div>
+                <div class="main-skills">
+                    <div class="card2">
+                        <i class="fa fa-laptop-code"></i>
+                        <h3>Barangays</h3>
+                        <p>There are at least 63 barangays located within this region.</p>
+                    </div>
+                </div>
+                <div class="main-skills">
+                    <div class="card3">
+                        <i class="fa fa-laptop-code"></i>
+                        <h3>Clearances</h3>
+                        <p>For your list of documents, you can view it here.</p>
+                    </div>
                 </div>
             </section>
-            <footer>
-                <p>hello</p>
-            </footer>
-       
     </body>
 </html>
