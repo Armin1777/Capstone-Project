@@ -140,31 +140,31 @@
                     <li><h1 href="" class="logo">dashboard</h1></li>
                 </br>
             </br>
-                    <li><a href="dashboard.html">
+                    <li><a href="dashboard.php">
                         <i class="fa fa-home" aria-hidden="true"></i>
                         <span class="nav-items">Home</span>
                     </a></li>
-                    <li><a href="profile.html">
+                    <li><a href="profile.php">
                         <i class="fa fa-user-circle" aria-hidden="true"></i>
                         <span class="nav-items">Profile</span>
                     </a></li>
-                    <li><a href="maps.html">
+                    <li><a href="maps.php">
                         <i class="fa fa-map" aria-hidden="true"></i>
                         <span class="nav-items">Maps</span>
                     </a></li>  
-                    <li><a href="requests.html">
+                    <li><a href="requests.php">
                         <i class="fa fa-file" aria-hidden="true"></i>
                         <span class="nav-items">Requests</span>
                     </a></li>  
-                    <li><a href="Follow_up.html">
+                    <li><a href="Follow_up.php">
                         <i class="fa fa-list" aria-hidden="true"></i>
                         <span class="nav-items">Follow up</span>
                     </a></li>  
-                    <li><a href="Settings.html">
+                    <li><a href="Settings.php">
                         <i class="fa fa-cog" aria-hidden="true"></i>
                         <span class="nav-items">Settings</span>
                     </a></li>
-                    <li><a href="Home.html">
+                    <li><a href="Home.php">
                         <i class="fa fa-sign-out" aria-hidden="true"></i>
                         <span class="nav-items">Log-out</span>
                     </a></li>

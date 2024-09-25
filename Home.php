@@ -8,10 +8,10 @@
     <body>
         <nav>
             <ul>
-            <li><a href="Section1">Home</a></li>
-            <li><a href="Section2">Administrators</a></li>
-            <li><a href="Section3">About</a></li>
-            <li><a href="Section4">FAQ's</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Administrators</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">FAQ's</a></li>
             </ul>
         </nav>
         <h1 class="xb">BGHIS:Web-based Mapping and Household Information System</h1>
@@ -34,10 +34,10 @@
         </div>
     </br>
     
-        <button type="submit" class="btn" onclick="location.href='dashboard.html'">Log in</button>
+        <button type="submit" class="btn" onclick="location.href='dashboard.php'">Log in</button>
 </br>
 </br>
-        <button type="submit" class="btn2" onclick="location.href='user-sign-up.html'">Sign Up</button>
+        <button type="submit" class="btn2" onclick="location.href='user-sign-up.php'">Sign Up</button>
         </form> 
     </br>
         <p>If you are a new user, create account by clicking "Sign Up"</p>
