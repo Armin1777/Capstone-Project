@@ -1,70 +1,28 @@
 <html>
 <head>
-    <title>
-        Profile
-    </title>
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         *{
             margin:0;
             padding:0;
+            box-sizing:border-box;
+            font-family:"Poppins", sans-serif;
         }
         body{
             min-height: 150vh;
-            box-sizing:border-box;
-            font-family: "Poppins", sans-serif;
-            background-image: url('city-map-any-kind-digital-info-graphics-print-publication-gps-map_403715-37.avif');
-            background-size: cover;
-            background-repeat: no-repeat;
+            background-color: rgb(239, 255, 252);
         }
         body::-webkit-scrollbar{
             display:none;
             scroll-behavior: smooth;
         }
-        nav{
-            position: fixed;
-            top: 0;
-            width: 100%;
-        }
-        nav a:hover{
-            color: white;
-        }
-        .thirdy{
-            margin-left:300px;
-            margin-top: 100px;
-            border: 0 20px;
-            background-color: rgb(78, 2, 78);
-            padding: 50px;
-            margin-right: 100px;
-            border-radius: 20px;
-            position:right;
-        }
-        .input-box input{
-            border-top:none;
-            border-left:none;
-            border-right:none;
-            outline: none;
-            width: 80%;
-            height: 50px;
-            border-width: 1px;
-            background: transparent;
-            border-color: rgb(185, 240, 67);
-            font-size: 16px;
-            padding: 7px;
-            position: center;    
-            color:white;
-            cursor: pointer;
-        }
-        .input-box input::placeholder{
-            font-weight:200px;
-            color: rgb(185, 240, 67);
-        }
-        h6{
-            font-size: 16px;
-            margin-top:20px;
-            color:rgb(185, 240, 67);
-            font-family: "Poppins", sans-serif;
-            font-weight:200;
-            margin-left: 5px;
+        .BGHIS{
+            float:right;
+            margin-top: 20px;
+            margin-right: 40px;
+            font-size:27px;
+            color: rgb(78, 2, 78);
         }
         .Sidebar{
             background-color: rgb(185, 240, 67);
@@ -72,7 +30,6 @@
             position: fixed;
             height: 100vh;
             width: 250px;
-            z-index: 999;
             box-shadow: -10px 0 10px rgba(0,0,0,0.1);
             display:flex;
             flex-direction: column;
@@ -82,7 +39,7 @@
            }
            nav li{
             height: 50px;
-           }
+            }
            nav a{
             position:relative;
             font-size:15px;
@@ -93,16 +50,6 @@
             transition: .3s;
             padding: 10px;
            }
-           .logo{
-            font-weight: bold;
-            padding-left: 15px;
-            font-size: 20px;
-            text-transform: uppercase;
-            margin-top:30px;
-            margin-left:10px;
-            color: rgb(78, 2, 78);
-            position:relative;
-           }
            nav .fa{
             position:relative;
             width: 70px;
@@ -111,141 +58,221 @@
             font-size:20px;
             text-align:center;
            }
-           .aaron{
-            float:right;
-            margin-top: 20px;
-            margin-right: 40px;
-            font-size:40px;
+           nav a:hover{
+            color: white;
+           }
+           .logo{
+            font-weight: bold;
+            padding-left: 15px;
+            font-size: 20px;
+            text-transform: uppercase;
+            margin-top:30px;
+            margin-left:10px;
             color: rgb(78, 2, 78);
            }
-           .savebtn{
-            margin-top: 20px;
-            width: 80px;
-            height: 40px;
-            background: rgb(185, 240, 67);
-            border: none;
-            outline: none;
+           .Welcome_message{
+            position: relative;
+            margin-left: 270px; 
+            margin-right: 30px;
+            color: black; 
+            font-size: 15px;
+            margin-top:70px;
+            border: 20px;
+            color:black;
+           }
+           .Fill_up_form{
+            margin-left: 270px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap:wrap;
+            background-color: rgb(78, 2, 78);
+            width:600px;
+            height: 450px;
             border-radius: 10px;
+           }
+           .Fill_up_form .input-box{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap:wrap;
+            margin-left:30px;
+            
+           }
+           .input-box .input-field{
+            position: relative;
+            width: 50%;
+            margin: 13px 0;
+           }
+           .input-box .input-field input{
+            width: 500px;
+            height: 30px;
+            background: transparent;
+            font-size: 16px;
+            color: white;
+            border: 1px solid rgb(185, 240, 67);
+            border-top:0;
+            border-left:0;
+            border-right:0;
+            border-width: 50%;
+            padding: 10px 10px;
             cursor: pointer;
-            font-size: 14px;
-            color: black;
-            font-weight: 200;
-            transition: .3s;
-           }
-           .savebtn:hover{
-            color:white;
-           }
-           #uploadbtn{
-            position:absolute;
-            height:30px;
-            width:30px;
-            padding:6px 6px;
-            border-radius:50%;
-            cursor:pointer;
-            background-color: rgb(185, 240, 67);
-            box-shadow: 2px 4px 4px rgb(0,0,0,0.1);
-            transform: translateX(-90%);
-            margin-top:100px;
-           }
-           .uploadbtn [type="fa fa camera"]{
-            transform: translate(-50%, -50%);
-            position:absolute;
-            top:50;
-           }
-           .photo1{
-            height:100px;
-            width:100px;
-            position:relative;
-            border-radius:10%;
-            background: url('Chromaflame.jpg');
-            margin-top:50px auto;
-            overflow:hidden;
-            float:right;
-           }
-           .profile{
-            position:absolute;
-            bottom: 0;
             outline: none;
+           }
+           ::-webkit-input-placeholder{
+            color:rgb(185, 240, 67);
+           }
+           .Fill_up_form .btn{
+            background-color: rgb(185, 240, 67);
+            border: none;
+            float: right;
+            width: 20%;
+            height:10%;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            color: rgb(78, 2, 78);
+            transition: 0.3s;
+           }
+           .Fill_up_form .btn:hover{
+            background-color: rgb(26, 213, 85);
+            color:black;
+           }
+           .Profile_picture{
+             float:right;
+             width:350px;
+             height:450px;
+             background-color: rgb(185, 240, 67);
+             margin-right: 50px;
+             display: flex;
+             flex-direction: column;
+             border-radius: 10px;
+             align-items:center;
+             overflow: hidden;
+           }
+           .images{
+            margin-top:20px;
+            height:150px;
+            width:150px;
+            position: relative;
+            background: url('icons/photo-gallery.png');
+            background-size: 100% 100%;
+            overflow:hidden;
+            color:rgb(78, 2, 78);
+            align-items: center;
+           }
+           .uploadfile{
+            position:absolute;
+            bottom:0;
+            outline:none;
             color:transparent;
-            width: 100px;
+            width:100%;
             box-sizing: border-box;
             padding: 15px 120px;
-            cursor: pointer;
-            transition: 0.5s;
+            cursor:pointer;
+            transition:0.5s;
            }
-           .profile::-webkit-file-upload-button{
+           .uploadfile::-webkit-file-upload-button{
             visibility: hidden;
            }
+           .input-bio{
+            width:200px;
+            height:100px;
+            background: transparent;
+
+           }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-        <nav class="">
-            <h1 class="aaron">BGHIS</h1>
-        </nav>
-        <nav>
-            <div class="sidebar">
-                <li><h1 href="" class="logo">dashboard</h1></li>
-                </br>
-            </br>
-                    <li><a href="dashboard.html">
-                        <i class="fa fa-home" aria-hidden="true"></i>
-                        <span class="nav-items">Home</span>
-                    </a></li>
-                    <li><a href="profile.html">
-                        <i class="fa fa-user-circle" aria-hidden="true"></i>
-                        <span class="nav-items">Profile</span>
-                    </a></li>
-                    <li><a href="maps.html">
-                        <i class="fa fa-map" aria-hidden="true"></i>
-                        <span class="nav-items">Maps</span>
-                    </a></li>  
-                    <li><a href="requests.html">
-                        <i class="fa fa-file" aria-hidden="true"></i>
-                        <span class="nav-items">Requests</span>
-                    </a></li>  
-                    <li><a href="Follow_up.html">
-                        <i class="fa fa-list" aria-hidden="true"></i>
-                        <span class="nav-items">Follow up</span>
-                    </a></li>  
-                    <li><a href="Settings.html">
-                        <i class="fa fa-cog" aria-hidden="true"></i>
-                        <span class="nav-items">Settings</span>
-                    </a></li>
-            </div>
+    <nav class="BGHIS">
+        <h1 class="BGHIS1">BGHIS</h1>
     </nav>
-    <body>
-        <div class="thirdy">
-            <form action="">
-                <div class="photo1">
-                    <input type="file"  class="profile">    
-                </div>
-                <div class="input-box">
-                    <input type="text" placeholder="First Name">
-                </div>
-                <div class="input-box">
-                    <input type="text" placeholder="Middle Name">
-                </div>
-                <div class="input-box">
-                    <input type="text" placeholder="Last Name">
-                </div>
-                <div class="input-box">
-                    <input type="text" placeholder="Age">
-                </div>
-                <div class="input-box">
-                    <h6>Birthdate</h6>
-                    <input type="text" name="date" onfocus="(this.type='date')" oblur="(!this.value)" this.type="'text'" clss="dater">
-                </div>
-                <div class="input-box">
-                    <input type="search" placeholder="High school">
-                </div>
-                <div class="input-box">
-                    <input type="search" placeholder="College">
-                </div>
-                <div class="input-box">
-                    <input type="email" placeholder="Update email">
-                </div>
-                <button type="submit" class="savebtn">Save</button>
-            </form>
+</head>
+<body>
+    <nav>
+        <div class="Sidebar">
+            <li><h1 href="" class="logo">dashboard</h1></li>
+        </br>
+    </br>
+            <li><a href="dashboard.html">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <span class="nav-items">Home</span>
+            </a></li>
+            <li><a href="profile.html">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                <span class="nav-items">Profile</span>
+            </a></li>
+            <li><a href="maps.html">
+                <i class="fa fa-map" aria-hidden="true"></i>
+                <span class="nav-items">Maps</span>
+            </a></li>  
+            <li><a href="requests.html">
+                <i class="fa fa-file" aria-hidden="true"></i>
+                <span class="nav-items">Requests</span>
+            </a></li>  
+            <li><a href="Follow_up.html">
+                <i class="fa fa-list" aria-hidden="true"></i>
+                <span class="nav-items">Follow up</span>
+            </a></li>  
+            <li><a href="Settings.html">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+                <span class="nav-items">Settings</span>
+            </a></li>
+            <li><a href="Home.html">
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                <span class="nav-items">Log-out</span>
+            </a></li>
         </div>
-    </body>
+    </nav>
+</br>
+    <section class="Welcome_message">
+        <h1 style="color: rgb(78, 2, 78); font-size: 25px;">Personal Information</h1>
+</br>
+        <p style="font-size: 16px;">This is your profile setting where you can edit your details. You can update your personal information such as name, and profile picture. After making such changes, be sure to save or confirm your updates.</p>
+    </section>
+</br>
+    <div class="Profile_picture">
+        <div class="images">
+            <input type="file" class="uploadfile"> 
+        </div>
+    </br>
+        <h6 style="color:rgb(78, 2, 78); font-size:20px;">Change Profile</h6>
+    </br>
+</br>
+</div>
+    <section class="Fill_up_form">
+        <form action="">
+        </br>
+            <div class="input-box">
+                <div class="input-field">
+                <input type="text" placeholder="First name" required>
+            </div>
+        </div>
+            <div class="input-box">
+                <div class="input-field">
+                <input type="text" placeholder="Middle name" required>
+            </div>
+        </div>
+            <div class="input-box">
+                <div class="input-field">
+                <input type="text" placeholder="Last name" required>
+            </div>
+        </div>
+            <div class="input-box">
+                <div class="input-field">
+                <input type="text" placeholder="Age" required>
+            </div>
+        </div>
+            <div class="input-box">
+                <div class="input-field">
+                <input type="text" placeholder="Birthdate" onfocus="this.type='date'" onblur="this.type='text'">
+            </div>
+        </div>
+            <div class="input-box">
+                <div class="input-field">
+                <input type="email" placeholder="Email" required>
+            </div>
+        </div>
+    </br>
+            <button type="submit" class="btn">Save</button>
+        </form>
+    </section>
+</body>
 </html>
