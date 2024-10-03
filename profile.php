@@ -206,15 +206,7 @@
             <li><a href="requests.php">
                 <i class="fa fa-file" aria-hidden="true"></i>
                 <span class="nav-items">Requests</span>
-            </a></li>  
-            <li><a href="Follow_up.php">
-                <i class="fa fa-list" aria-hidden="true"></i>
-                <span class="nav-items">Follow up</span>
-            </a></li>  
-            <li><a href="Settings.php">
-                <i class="fa fa-cog" aria-hidden="true"></i>
-                <span class="nav-items">Settings</span>
-            </a></li>
+            </a></li>    
             <li><a href="Home.php">
                 <i class="fa fa-sign-out" aria-hidden="true"></i>
                 <span class="nav-items">Log-out</span>
