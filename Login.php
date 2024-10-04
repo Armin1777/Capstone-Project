@@ -18,7 +18,7 @@
         </nav>
     </br>
 </br>
-        <div class="nash" action="connect.php" method="POST">
+        <div class="nash" action="conne.php" method="POST">
         <form action="login.php" method="POST">
             <h2>Login to your account</h2>
         </br>

@@ -1,5 +1,3 @@
-
-
 <html>
     <head>
         <title>Sign Up</title>
@@ -90,7 +88,7 @@
     <body>
         <!--Sign up form for registration-->
         <div class="calvin" id="signupform">
-            <form class="form" action="connect.php" method="post">
+            <form class="form" action="registration.php" method="post">
             </br>
         </br>
                 <h2 style="text-align:center; font-size:25px; margin: 10px; margin-top:150px; color:rgb(78,2,78)">Welcome to the System, Please Register Here!</h2>
