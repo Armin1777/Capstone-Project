@@ -18,8 +18,8 @@
         </nav>
     </br>
 </br>
-        <div class="nash" action="conne.php" method="POST">
-        <form action="login.php" method="POST">
+        <div class="nash" action="registration.php"  method="POST">
+        <form id="login">
             <h2>Login to your account</h2>
         </br>
         <div class="input-box">

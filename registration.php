@@ -2,12 +2,11 @@
 $name= $_POST['name'];
 $email=$_POST['email'];
 $pass=$_POST['password'];
-$sign_up=$_POST['signupform'];
-$login=$_POST['login'];
+
 
 $conn= new mysqli('localhost', 'root', '', 'bghis');
 
-if(isset($sign_up)){
+
     if($conn->connect_error){
         die("Connection Failed : " .$conn->error);
     } else{
@@ -18,10 +17,4 @@ if(isset($sign_up)){
         $stmt->close();
         $conn->close();
     }
-} else{
-        echo "Connection Error" .$conn->error;
-}
-if(isset($login)){
-
-}   
 ?>
