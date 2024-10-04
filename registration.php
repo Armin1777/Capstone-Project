@@ -2,16 +2,26 @@
 $name= $_POST['name'];
 $email=$_POST['email'];
 $pass=$_POST['password'];
+$sign_up=$_POST['signupform'];
+$login=$_POST['login'];
 
 $conn= new mysqli('localhost', 'root', '', 'bghis');
-if($conn->connect_error){
-    die("Connection Failed : " .$conn->error);
+
+if(isset($sign_up)){
+    if($conn->connect_error){
+        die("Connection Failed : " .$conn->error);
+    } else{
+        $stmt= $conn->prepare("INSERT INTO registration(name, email, pass) VALUES(?,?,?)");
+        $stmt->bind_param("sss", $name, $email, $pass);
+        $stmt->execute();
+            header ("Location : Login.php");
+        $stmt->close();
+        $conn->close();
+    }
 } else{
-    $stmt= $conn->prepare("INSERT INTO registration(name, email, pass) VALUES(?,?,?)");
-    $stmt->bind_param("sss", $name, $email, $pass);
-    $stmt->execute();
-        HEADER ("Location : Login.php");
-    $stmt->close();
-    $conn->close();
+        echo "Connection Error" .$conn->error;
 }
+if(isset($login)){
+
+}   
 ?>
